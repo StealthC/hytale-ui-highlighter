@@ -9,12 +9,20 @@
       "match": "//.*?$"
     },
     {
+      "name": "keyword.operator.spread.hytale-ui",
+      "match": "\\.\\."
+    },
+    {
       "name": "variable.other.hytale-ui",
       "match": "\\$[A-Za-z_][A-Za-z0-9_]*"
     },
     {
       "name": "keyword.control.hytale-ui",
       "match": "\\b(if|else|switch|case)\\b"
+    },
+    {
+      "name": "entity.name.function.hytale-ui",
+      "match": "[A-Z][A-Za-z0-9]*(?=\\s*\\()"
     },
     {
       "name": "entity.name.selector.hytale-ui",
@@ -62,6 +70,10 @@
     {
       "name": "punctuation.separator.comma.hytale-ui",
       "match": ","
+    },
+    {
+      "name": "punctuation.separator.accessor.hytale-ui",
+      "match": "\\."
     },
     {
       "name": "punctuation.section.braces.begin.hytale-ui",

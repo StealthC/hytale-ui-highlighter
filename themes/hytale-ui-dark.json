@@ -18,10 +18,26 @@
       }
     },
     {
+      "name": "Spread Operator",
+      "scope": "keyword.operator.spread.hytale-ui",
+      "settings": {
+        "foreground": "#d19a66",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Variable ($)",
       "scope": "variable.other.hytale-ui",
       "settings": {
         "foreground": "#9cdcfe"
+      }
+    },
+    {
+      "name": "Function Call",
+      "scope": "entity.name.function.hytale-ui",
+      "settings": {
+        "foreground": "#dcdcaa",
+        "fontStyle": "bold"
       }
     },
     {
@@ -105,6 +121,13 @@
       "scope": "punctuation.separator.key-value.hytale-ui",
       "settings": {
         "foreground": "#d19a66"
+      }
+    },
+    {
+      "name": "Accessor Dot",
+      "scope": "punctuation.separator.accessor.hytale-ui",
+      "settings": {
+        "foreground": "#d4d4d4"
       }
     },
     {
