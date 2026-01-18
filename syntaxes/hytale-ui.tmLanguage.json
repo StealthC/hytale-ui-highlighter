@@ -1,0 +1,91 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Hytale UI",
+  "scopeName": "source.hytale-ui",
+  "fileTypes": ["ui"],
+  "patterns": [
+    {
+      "name": "comment.line.hytale-ui",
+      "match": "//.*?$"
+    },
+    {
+      "name": "variable.other.hytale-ui",
+      "match": "\\$[A-Za-z_][A-Za-z0-9_]*"
+    },
+    {
+      "name": "keyword.control.hytale-ui",
+      "match": "\\b(if|else|switch|case)\\b"
+    },
+    {
+      "name": "entity.name.selector.hytale-ui",
+      "match": "@[A-Za-z_][A-Za-z0-9_]*"
+    },
+    {
+      "name": "entity.other.attribute-name.id.hytale-ui",
+      "match": "#[A-Za-z_][A-Za-z0-9_]*(?=\\s|$|[{}();,:])"
+    },
+    {
+      "name": "string.unquoted.hytale-ui",
+      "match": "(?<![#$@])[A-Z][A-Za-z0-9]*(?=\\s*[:{(])"
+    },
+    {
+      "name": "variable.language.hytale-ui",
+      "match": "%[a-zA-Z0-9._-]+"
+    },
+    {
+      "name": "string.quoted.double.hytale-ui",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.hytale-ui",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "constant.numeric.hex.hytale-ui",
+      "match": "#[0-9a-fA-F]{6}(?![A-Za-z0-9_])"
+    },
+    {
+      "name": "constant.numeric.hytale-ui",
+      "match": "\\b\\d+(?:\\.\\d+)?\\b"
+    },
+    {
+      "name": "constant.language.hytale-ui",
+      "match": "\\b(true|false|null)\\b"
+    },
+    {
+      "name": "punctuation.separator.key-value.hytale-ui",
+      "match": ":"
+    },
+    {
+      "name": "punctuation.separator.comma.hytale-ui",
+      "match": ","
+    },
+    {
+      "name": "punctuation.section.braces.begin.hytale-ui",
+      "match": "\\{"
+    },
+    {
+      "name": "punctuation.section.braces.end.hytale-ui",
+      "match": "\\}"
+    },
+    {
+      "name": "punctuation.section.parens.begin.hytale-ui",
+      "match": "\\("
+    },
+    {
+      "name": "punctuation.section.parens.end.hytale-ui",
+      "match": "\\)"
+    },
+    {
+      "name": "punctuation.section.brackets.begin.hytale-ui",
+      "match": "\\["
+    },
+    {
+      "name": "punctuation.section.brackets.end.hytale-ui",
+      "match": "\\]"
+    }
+  ]
+}

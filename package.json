@@ -1,0 +1,60 @@
+{
+  "name": "hytale-ui-highlighter",
+  "displayName": "Hytale UI Syntax Highlighter",
+  "description": "Syntax highlighting and language support for Hytale .ui configuration files",
+  "version": "1.0.0",
+  "publisher": "StealthC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StealthC/hytale-ui-highlighter"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "keywords": [
+    "hytale",
+    "ui",
+    "syntax",
+    "highlighting",
+    "game-development"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "hytale-ui",
+        "aliases": [
+          "Hytale UI",
+          "hytale-ui"
+        ],
+        "extensions": [
+          ".ui"
+        ],
+        "configuration": "./language-configuration/hytale-ui-language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hytale-ui",
+        "scopeName": "source.hytale-ui",
+        "path": "./syntaxes/hytale-ui.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Hytale UI Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/hytale-ui-dark.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "echo 'Ready to publish'",
+    "test": "echo 'No tests configured yet'"
+  },
+  "devDependencies": {}
+}
