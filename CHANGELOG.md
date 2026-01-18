@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-01-18
+
+### Added
+- **Intelligent Autocomplete System** - Major new feature!
+  - Autocomplete for 19+ element types (Group, Label, Button, TextButton, etc.)
+  - Autocomplete for 40+ properties (Anchor, LayoutMode, Background, Style, etc.)
+  - Function suggestions with parameter hints (PatchStyle, LabelStyle, ButtonStyle, etc.)
+  - Context-aware property value suggestions
+  - Subproperty suggestions for nested structures (e.g., Anchor: (Width, Height, ...))
+  - Enum value suggestions (LayoutMode: Top|Left|Center|...)
+  - Support for alignment values, boolean values, and more
+- Data extraction from real Hytale server `.ui` files
+  - Analyzed 62 `.ui` files from the Hytale server codebase
+  - Extracted comprehensive patterns and common usage
+- TypeScript completion provider implementation
+  - Smart context detection for when to show completions
+  - Snippet-based completions with tab stops
+  - Markdown documentation for each completion item
+
+### Changed
+- Updated extension description to mention autocomplete
+- Bumped version to 1.1.0
+- Enhanced README with autocomplete examples and usage guide
+- Added new keywords: `autocomplete`, `intellisense`
+
 ## [1.0.0] - 2026-01-18
 
 ### Added

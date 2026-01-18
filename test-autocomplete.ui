@@ -1,0 +1,44 @@
+// Teste de Autocomplete para Hytale UI
+// Pressione Ctrl+Space para ver as sugestões
+
+$Common = "../Common.ui";
+
+// Experimente digitar e ver o autocomplete:
+// 1. Digite "Gro" e veja Group aparecer
+// 2. Dentro de um elemento, digite propriedades como "Anc", "Lay", "Bac"
+// 3. Após "LayoutMode:" veja as opções disponíveis
+// 4. Após "Style: " digite funções como "Label", "Button", "Patch"
+
+Group {
+  // Digite aqui e teste o autocomplete de propriedades
+  Anchor: (Width: 500, Height: 300);
+  LayoutMode: Top;
+  Background: #000000(0.5);
+  Padding: (Full: 20);
+  
+  Label #Title {
+    Text: %test.title;
+    Anchor: (Height: 48);
+    Style: (
+      FontSize: 24,
+      TextColor: #ffffff,
+      HorizontalAlignment:Center,
+      VerticalAlignment: Center,
+      RenderBold: true
+    );
+  }
+  
+  TextButton #ConfirmButton {
+    Anchor: (Width: 200, Height: 44, Bottom: 20);
+    Text: "Confirmar";
+    Style: TextButtonStyle(
+      Default: (Background: PatchStyle(TexturePath: "button.png", Border: 12)),
+      Hovered: (Background: PatchStyle(TexturePath: "button_hover.png", Border: 12))
+    );
+  }
+
+  
+
+  
+  
+}

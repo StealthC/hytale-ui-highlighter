@@ -1,6 +1,6 @@
 # Hytale UI Syntax Highlighter
 
-Syntax highlighting and language support for **Hytale `.ui` configuration files** in Visual Studio Code.
+Syntax highlighting, autocomplete, and language support for **Hytale `.ui` configuration files** in Visual Studio Code.
 
 ## Features
 
@@ -12,6 +12,13 @@ Syntax highlighting and language support for **Hytale `.ui` configuration files*
 - Hex colors (`#RRGGBB`)
 - Comments and strings
 
+🚀 **Intelligent Autocomplete**
+- **Element types**: `Group`, `Label`, `Button`, `TextButton`, `ItemGrid`, and 18+ more
+- **Properties**: `Anchor`, `LayoutMode`, `Background`, `Padding`, `Style`, and 40+ properties
+- **Style functions**: `PatchStyle`, `LabelStyle`, `ButtonStyle`, with parameter suggestions
+- **Property values**: Context-aware value suggestions (e.g., `LayoutMode: Top|Left|Center...`)
+- **Subproperties**: Smart suggestions for nested properties like `Anchor: (Width: ..., Height: ...)`
+
 🎨 **Dark Theme**
 - Optimized color scheme for `.ui` files
 - Proper contrast for readability
@@ -22,12 +29,58 @@ Syntax highlighting and language support for **Hytale `.ui` configuration files*
 - Smart indentation
 - Bracket matching
 - Comment toggling with `Ctrl+/`
+- Code formatting
+
+## Autocomplete Examples
+
+The autocomplete system provides intelligent suggestions based on context:
+
+**Element Types:**
+- Type `Gro` → suggests `Group { }`
+- Type `Lab` → suggests `Label { }`
+- Type `Tex` → suggests `TextButton { }`
+
+**Properties:**
+- Type `Anc` → suggests `Anchor: ()`
+- Type `Lay` → suggests `LayoutMode: Top|Left|Center...`
+- Type `Bac` → suggests `Background: `
+
+**Style Functions:**
+- Type `PatchStyle` → expands with parameters: `PatchStyle(TexturePath: , Border: )`
+- Type `LabelStyle` → expands with: `LabelStyle(FontSize: , TextColor: , ...)`
+- Type `ButtonStyle` → expands with state parameters
+
+**Property Values:**
+- After `LayoutMode:` → suggests: `Top`, `Left`, `Center`, `Middle`, `TopScrolling`, etc.
+- After `Visible:` → suggests: `true`, `false`
+- After `HorizontalAlignment:` → suggests: `Start`, `Center`, `End`, `Left`, `Right`
+
+**Example Usage:**
+```hytale-ui
+Group {
+  Anchor: (Width: 500, Height: 300);  // Autocomplete for Width, Height
+  LayoutMode: Top;                     // Autocomplete shows all layout modes
+  Background: PatchStyle(              // Function with parameter hints
+    TexturePath: "texture.png",
+    Border: 12
+  );
+  
+  Label #Title {
+    Text: %i18n.key;
+    Style: LabelStyle(                 // Smart parameter suggestions
+      FontSize: 24,
+      TextColor: #ffffff,
+      HorizontalAlignment: Center      // Enum value suggestions
+    );
+  }
+}
+```
 
 ## Installation
 
 1. Search for "Hytale UI Syntax Highlighter" in VS Code Extensions
 2. Click Install
-3. `.ui` files will automatically be highlighted
+3. `.ui` files will automatically be highlighted with autocomplete enabled
 
 Or install directly from the command line:
 ```bash

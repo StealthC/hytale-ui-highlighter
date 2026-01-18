@@ -1,8 +1,8 @@
 {
   "name": "hytale-ui-highlighter",
   "displayName": "Hytale UI Syntax Highlighter",
-  "description": "Syntax highlighting, language support and formatter for Hytale .ui configuration files",
-  "version": "1.0.0",
+  "description": "Syntax highlighting, autocomplete, and formatter for Hytale .ui configuration files",
+  "version": "1.1.0",
   "publisher": "StealthC",
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
     "syntax",
     "highlighting",
     "formatter",
+    "autocomplete",
+    "intellisense",
     "game-development"
   ],
   "main": "./out/extension.js",
