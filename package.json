@@ -67,8 +67,9 @@
     "test": "echo 'No tests configured yet'"
   },
   "devDependencies": {
-    "@types/vscode": "^1.50.0",
     "@types/node": "^20.0.0",
+    "@types/vscode": "^1.50.0",
+    "@vscode/vsce": "^3.7.1",
     "typescript": "^5.0.0"
   }
 }
