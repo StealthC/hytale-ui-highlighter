@@ -62,6 +62,8 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
+    "publish": "vsce publish",
+    "package": "vsce package",
     "test": "echo 'No tests configured yet'"
   },
   "devDependencies": {
