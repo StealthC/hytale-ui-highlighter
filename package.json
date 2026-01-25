@@ -2,7 +2,7 @@
   "name": "hytale-ui-highlighter",
   "displayName": "Hytale UI Syntax Highlighter",
   "description": "Syntax highlighting, language support and formatter for Hytale .ui configuration files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "StealthC",
   "repository": {
     "type": "git",

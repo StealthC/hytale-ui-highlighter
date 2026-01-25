@@ -5,6 +5,11 @@
   "fileTypes": ["ui"],
   "patterns": [
     {
+      "name": "comment.block.hytale-ui",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
       "name": "comment.line.hytale-ui",
       "match": "//.*?$"
     },
